@@ -1904,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Account Name_DataCard1_4'.DataCardValue1_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.Klant_DataCard1.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Account Name_DataCard1_4'.DataCardValue1_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.Klant_DataCard1.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Project details Screen",
-                "type": "'Project details Screen'.Form1_4.'Account Name_DataCard1_4'.DataCardValue1_4"
+                "type": "'Project details Screen'.Form1_4.Klant_DataCard1.DataCardValue7"
               }
             }
           ],
@@ -1934,19 +1934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Main Phone_DataCard1_4'.DataCardValue2_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Services Type_DataCard1'.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Main Phone_DataCard1_4'.DataCardValue2_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Services Type_DataCard1'.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Project details Screen",
-                "type": "'Project details Screen'.Form1_4.'Main Phone_DataCard1_4'.DataCardValue2_4"
+                "type": "'Project details Screen'.Form1_4.'Services Type_DataCard1'.DataCardValue6"
               }
             }
           ],
@@ -1964,19 +1964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Address 1: City_DataCard1_4'.DataCardValue3_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Project Name_DataCard1'.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Address 1: City_DataCard1_4'.DataCardValue3_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Project details Screen'.Form1_4.'Project Name_DataCard1'.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Project details Screen",
-                "type": "'Project details Screen'.Form1_4.'Address 1: City_DataCard1_4'.DataCardValue3_4"
+                "type": "'Project details Screen'.Form1_4.'Project Name_DataCard1'.DataCardValue4"
               }
             }
           ],
