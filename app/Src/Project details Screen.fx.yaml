@@ -191,6 +191,7 @@
     Form1_4 As form:
         BorderColor: =RGBA(131, 24, 75, 1)
         DataSource: =Projects
+        DefaultMode: =FormMode.View
         NumberOfColumns: =1
         X: =40
         Y: =256
