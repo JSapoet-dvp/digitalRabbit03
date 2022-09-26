@@ -1,0 +1,507 @@
+"'Klant details Screen' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    rectangle_background_4 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(255, 211, 205, 1)
+        Height: =668
+        Width: =1366
+        Y: =100
+        ZIndex: =1
+
+    Rectangle1_7 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Width: =1365
+        X: =1
+        ZIndex: =2
+
+    Label1_7 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =33
+        Text: ="Klant"
+        Width: =400
+        X: =163
+        Y: =32
+        ZIndex: =3
+
+    icon_Home_5 As icon.Home:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+        X: =41
+        Y: =17
+        ZIndex: =4
+
+    lbl_user_4 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: =User().FullName
+        X: =1214
+        Y: =32
+        ZIndex: =11
+
+    nav_projecten_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        Icon5_9 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Width: =50
+            X: =1080
+            Y: =20
+            ZIndex: =5
+
+        Label3_12 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="projecten"
+            Width: =80
+            X: =1066
+            Y: =65
+            ZIndex: =6
+
+    Icon1_Cancel_3 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+        Width: =50
+        X: =1216
+        Y: =700
+        ZIndex: =19
+
+    nav_offertes_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
+
+        Icon5_10 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ColorPicker
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =920
+            Y: =20
+            ZIndex: =7
+
+        Label3_13 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="offertes"
+            Width: =80
+            X: =914
+            Y: =65
+            ZIndex: =8
+
+    Icon_Save_3 As icon.Save:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Edit
+        OnSelect: =Navigate('Klant aanmaken/aanpassen Screen',ScreenTransition.None)
+        Width: =50
+        X: =1283
+        Y: =700
+        ZIndex: =21
+
+    nav_klanten_3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =22
+
+        Icon5_11 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Person
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =995
+            Y: =20
+            ZIndex: =9
+
+        Label3_14 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="klanten"
+            Width: =80
+            X: =989
+            Y: =65
+            ZIndex: =10
+
+    Icon1_Cancel_7 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate('Klant aanmaken/aanpassen Screen',ScreenTransition.None)
+        Width: =50
+        X: =1151
+        Y: =700
+        ZIndex: =23
+
+    Form1_3 As form:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        DataSource: =Accounts
+        NumberOfColumns: =1
+        X: =40
+        Y: =256
+        ZIndex: =25
+
+        "'Account Name_DataCard1_3' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="name"
+            Default: =ThisItem.'Account Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Accounts],DataSourceInfo.DisplayName,"name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Accounts], DataSourceInfo.MaxLength, "name")
+            Required: =true
+            Update: =DataCardValue1_3.Text
+            Width: =800
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+            DataCardKey1_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1_3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1_3.Y + DataCardKey1_3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1_3.Y + DataCardValue1_3.Height
+                ZIndex: =3
+
+            StarVisible1_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey1_3.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1_3.Y
+                ZIndex: =4
+
+        "'Main Phone_DataCard1_3' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="telephone1"
+            Default: =ThisItem.'Main Phone'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Accounts],DataSourceInfo.DisplayName,"telephone1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Accounts], DataSourceInfo.MaxLength, "telephone1")
+            Required: =false
+            Update: =DataCardValue2_3.Text
+            Width: =800
+            X: =0
+            Y: =1
+            ZIndex: =23
+
+            DataCardKey2_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2_3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2_3.Y + DataCardKey2_3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue2_3.Y + DataCardValue2_3.Height
+                ZIndex: =3
+
+            StarVisible2_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey2_3.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey2_3.Y
+                ZIndex: =4
+
+        "'Address 1: City_DataCard1_3' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="address1_city"
+            Default: |-
+                =ThisItem.'Address 1: City'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Accounts],DataSourceInfo.DisplayName,"address1_city")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Accounts], DataSourceInfo.MaxLength, "address1_city")
+            Required: =false
+            Update: =DataCardValue3_3.Text
+            Width: =800
+            X: =0
+            Y: =2
+            ZIndex: =23
+
+            DataCardKey3_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3_3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 211, 205, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3_3.Y + DataCardKey3_3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3_3 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3_3.Y + DataCardValue3_3.Height
+                ZIndex: =3
+
+            StarVisible3_3 As label:
+                Align: =Align.Center
+                Color: =RGBA(131, 24, 75, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey3_3.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3_3.Y
+                ZIndex: =4
+
+    lbl_pageContent_6 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =31
+        Size: =20
+        Text: ="Klantdetails"
+        Width: =241
+        X: =63
+        Y: =200
+        ZIndex: =26
+
+    nav_addNewItem_6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =29
+
+        Icon6_6 As icon.Add:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate('Offerte aanmaken/aanpassen Screen',ScreenTransition.None)
+            Width: =50
+            X: =845
+            Y: =24
+            ZIndex: =27
+
+        Label3_24 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =35
+            Size: =11
+            Text: ="new off."
+            Width: =70
+            X: =840
+            Y: =67
+            ZIndex: =28
+

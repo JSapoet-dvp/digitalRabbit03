@@ -1,0 +1,108 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "drd_klantens",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "drd_klanten",
+    "MaxGetRowsCount": 500,
+    "Name": "Klantens",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre84_drd_project_Klant_drd_klanten": "Projects",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "drd_adres": "Adres",
+      "drd_bedrijfsnaam": "Bedrijfsnaam",
+      "drd_Contactpersoon": "Contactpersoon",
+      "drd_drd_offertes_Klant_drd_klanten": "Offertes",
+      "drd_email": "Email",
+      "drd_klanten_AsyncOperations": "System Jobs",
+      "drd_klanten_BulkDeleteFailures": "Bulk Delete Failures",
+      "drd_Klanten_drd_verkoopafdeling_drd_verko": "Sales Medewerkers",
+      "drd_klanten_DuplicateBaseRecord": "Duplicate Records (drd_klanten_DuplicateBaseRecord)",
+      "drd_klanten_DuplicateMatchingRecord": "Duplicate Records (drd_klanten_DuplicateMatchingRecord)",
+      "drd_klanten_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "drd_klanten_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "drd_klanten_ProcessSession": "Process Sessions",
+      "drd_klanten_SyncErrors": "Sync Errors",
+      "drd_klantenid": "Klant",
+      "drd_klantid": "KlantID",
+      "drd_plaats": "Plaats",
+      "drd_postcode": "Postcode",
+      "drd_telefoon": "Telefoon",
+      "drd_website": "Website",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Klantens",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Klantens (Views)",
+    "Name": "_drd_klanten_views",
+    "RelatedEntityName": "Klantens",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3650dc7f-77c2-4439-9536-8ceec85d231d": "Klanten Advanced Find View",
+      "5567944d-1d6e-4e4f-9296-ae0a90fa155f": "Active Klantens",
+      "8f101ca4-9b33-4b80-b263-a69fbb90ead4": "Inactive Klantens",
+      "ba148868-ddfc-4164-832d-17042faff6ff": "Klanten Associated View",
+      "d9ba855f-d1df-4960-8a28-42a0449afe60": "Klanten Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Klantens)",
+    "Name": "drd_klanten_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Klantens"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Klantens",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Klantens)",
+    "Name": "drd_klanten_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Klantens"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Klantens",
+    "Type": "OptionSetInfo"
+  }
+]

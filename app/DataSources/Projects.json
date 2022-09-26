@@ -1,0 +1,123 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "drd_projects",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "drd_project",
+    "MaxGetRowsCount": 500,
+    "Name": "Projects",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre84_Klant": "Klant",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "drd_drd_offertes_Project_drd_project": "Offertes",
+      "drd_enddate": "End Date",
+      "drd_project_AsyncOperations": "System Jobs",
+      "drd_project_BulkDeleteFailures": "Bulk Delete Failures",
+      "drd_project_DuplicateBaseRecord": "Duplicate Records (drd_project_DuplicateBaseRecord)",
+      "drd_project_DuplicateMatchingRecord": "Duplicate Records (drd_project_DuplicateMatchingRecord)",
+      "drd_project_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "drd_project_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "drd_project_ProcessSession": "Process Sessions",
+      "drd_project_SyncErrors": "Sync Errors",
+      "drd_projectid": "Project",
+      "drd_projectname": "Project Name",
+      "drd_servicestype": "Services Type",
+      "drd_startdate": "Start Date ",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Projects",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Projects (Views)",
+    "Name": "_drd_project_views",
+    "RelatedEntityName": "Projects",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1c87ca89-28f9-48ac-b810-97790132321d": "Active Projects",
+      "3147120d-0b76-4c33-acb5-6b4899f9f03f": "Project Advanced Find View",
+      "4155fb81-f85d-4030-afea-3b5a5adcec76": "Project Lookup View",
+      "90f862e5-a782-47ed-aae5-295260458591": "Project Associated View",
+      "d260e677-c83c-4331-92d2-d0db952a39ce": "Inactive Projects"
+    }
+  },
+  {
+    "DisplayName": "Status (Projects)",
+    "Name": "drd_project_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Projects"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Projects",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Projects)",
+    "Name": "drd_project_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Projects"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Projects",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Service type",
+    "Name": "drd_servicetype",
+    "OptionSetInfoNameMapping": {
+      "1": "Proof o Concept",
+      "2": "Beheren van oplossing ",
+      "3": "Power platform beheer"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "drd_servicestype",
+        "OptionSetReferenceEntityName": "Projects"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "drd_servicestype",
+    "RelatedEntityName": "Projects",
+    "Type": "OptionSetInfo"
+  }
+]

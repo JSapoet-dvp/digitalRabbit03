@@ -1,0 +1,361 @@
+"'Offerteoverzicht Screen' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    "'Body Background' As rectangle":
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(255, 211, 205, 1)
+        Height: =668
+        Width: =1366
+        Y: =100
+        ZIndex: =1
+
+    "Gallery_offertes As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(211, 66, 9, 1)
+        Fill: =RGBA(255, 211, 205, 1)
+        Height: =507
+        Items: =Search(Offertes, Searchbar.Text, "drd_beschrijving")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =1152
+        X: =50
+        Y: =215
+        ZIndex: =1
+
+        Title3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.'Project Naam'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: |-
+                ="$" & Text(ThisItem.Prijs, "####.00")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =72
+            X: =32
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate('Offerte details Screen',ScreenTransition.None)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Subtitle3_5 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =47
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Beschrijving
+            VerticalAlign: =VerticalAlign.Top
+            Width: =432
+            X: =125
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =5
+
+        Subtitle3_6 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =47
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: |-
+                ="ID: " & ThisItem.OfferteID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =115
+            X: =569
+            Y: =54
+            ZIndex: =6
+
+        Subtitle3_7 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =67
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Klant.Bedrijfsnaam
+            VerticalAlign: =VerticalAlign.Top
+            Width: =224
+            X: =764
+            Y: =34
+            ZIndex: =7
+
+    Icon1_Cancel_5 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+        Width: =50
+        X: =1288
+        Y: =700
+        ZIndex: =19
+
+    Icon1_Cancel_6 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate('Offerte aanmaken/aanpassen Screen',ScreenTransition.None)
+        Width: =50
+        X: =1223
+        Y: =700
+        ZIndex: =23
+
+    Searchbar As text:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DelayOutput: |
+            =true
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        HintText: ="Zoek Klanten"
+        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 211, 205, 1)
+        Size: =13
+        Width: =595
+        X: =95
+        Y: =175
+        ZIndex: =28
+
+    "'Header Group' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =28
+
+        "'Header Background' As rectangle":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            Height: =107
+            Width: =1366
+            X: =1
+            ZIndex: =2
+
+        "'Screen Description' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =33
+            Text: ="Offertes"
+            Width: =400
+            X: =330
+            Y: =33
+            ZIndex: =3
+
+        "'Home Button' As icon.Home":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Icon: =Icon.Home
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            X: =151
+            Y: =17
+            ZIndex: =4
+
+        "'Projecten Icon' As icon.DetailList":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Width: =50
+            X: =1080
+            Y: =20
+            ZIndex: =5
+
+        "'Projecten Label' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="Projecten"
+            Width: =80
+            X: =1066
+            Y: =65
+            ZIndex: =6
+
+        "'Offertes Icon' As icon.DetailList":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ColorPicker
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =920
+            Y: =20
+            ZIndex: =7
+
+        "'Offertes Label' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="Offertes"
+            Width: =80
+            X: =914
+            Y: =65
+            ZIndex: =8
+
+        "'Klanten Icon' As icon.DetailList":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Person
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =995
+            Y: =20
+            ZIndex: =9
+
+        "'Klanten Label' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="Klanten"
+            Width: =80
+            X: =989
+            Y: =65
+            ZIndex: =10
+
+        "'Name User' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: =User().FullName
+            X: =1202
+            Y: =20
+            ZIndex: =11
+
+        "'Nieuw Offerte Icon' As icon.Add":
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate('Offerte aanmaken/aanpassen Screen',ScreenTransition.None)
+            Width: =50
+            X: =845
+            Y: =24
+            ZIndex: =12
+
+        "'Nieuw Offerte Label' As label":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =32
+            Size: =11
+            Text: ="Nieuw off."
+            Width: =80
+            X: =834
+            Y: =70
+            ZIndex: =17
+
+        "'Digital Rabbit Logo' As image":
+            BorderColor: =RGBA(131, 24, 75, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =108
+            Image: ='4f28qindt7t37gtha92e074xt3n1'
+            Width: =108
+            ZIndex: =27
+
+    Icon1 As icon.Search:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =40
+        Icon: =Icon.Search
+        Width: =33
+        X: =50
+        Y: =175
+        ZIndex: =29
+

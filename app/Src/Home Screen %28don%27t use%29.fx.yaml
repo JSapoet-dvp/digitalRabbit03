@@ -1,0 +1,267 @@
+"'Home Screen (don''t use)' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    rectangle_background As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(255, 211, 205, 1)
+        Height: =668
+        Width: =1366
+        Y: =100
+        ZIndex: =1
+
+    "'Group Klanten btns' As group":
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =13
+
+        btn_nonactive_rectangle As button:
+            BorderColor: =RGBA(211, 66, 9, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =94
+            HoverBorderColor: =RGBA(211, 66, 9, 1)
+            HoverColor: =RGBA(211, 66, 9, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
+            PaddingLeft: =30
+            PressedBorderColor: =RGBA(230, 230, 230, 1)
+            PressedColor: =RGBA(211, 66, 9, 1)
+            PressedFill: =RGBA(230, 230, 230, 1)
+            Size: =28
+            Text: ="Klanten"
+            Width: =600
+            X: =366
+            Y: =347
+            ZIndex: =9
+
+        btn_klantNieuw As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =94
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =Navigate('Klant aanmaken/aanpassen Screen',ScreenTransition.None)
+            RadiusBottomLeft: =0
+            RadiusTopLeft: =0
+            Size: =15
+            Text: ="New +"
+            Width: =78
+            X: =886
+            Y: =348
+            ZIndex: =11
+
+        btn_klantenOverzicht As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =94
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            RadiusBottomLeft: |
+                =10
+            RadiusBottomRight: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Over zicht"
+            Width: =78
+            X: =368
+            Y: =348
+            ZIndex: =12
+
+    "'Group Offertes btns' As group":
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =16
+
+        btn_nonactive_rectangle_1 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(211, 66, 9, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =94
+            HoverBorderColor: =RGBA(211, 66, 9, 1)
+            HoverColor: =RGBA(211, 66, 9, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
+            PaddingLeft: =30
+            PressedBorderColor: =RGBA(230, 230, 230, 1)
+            PressedColor: =RGBA(211, 66, 9, 1)
+            PressedFill: =RGBA(230, 230, 230, 1)
+            Size: =28
+            Text: ="Offertes"
+            Width: =600
+            X: =366
+            Y: =194
+            ZIndex: =13
+
+        btn_offerteNieuw_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =94
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =Navigate('Offerte aanmaken/aanpassen Screen',ScreenTransition.None)
+            RadiusBottomLeft: =0
+            RadiusTopLeft: =0
+            Size: =15
+            Text: ="New +"
+            Width: =78
+            X: =886
+            Y: =195
+            ZIndex: =14
+
+        btn_offertesOverzicht_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =94
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            RadiusBottomLeft: |
+                =10
+            RadiusBottomRight: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Over zicht"
+            Width: =78
+            X: =368
+            Y: =195
+            ZIndex: =15
+
+    "'Group Projecten btns' As group":
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =19
+
+        btn_nonactive_rectangle_2 As button:
+            BorderColor: =RGBA(211, 66, 9, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =94
+            HoverBorderColor: =RGBA(211, 66, 9, 1)
+            HoverColor: =RGBA(211, 66, 9, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
+            PaddingLeft: =30
+            PressedBorderColor: =RGBA(230, 230, 230, 1)
+            PressedColor: =RGBA(211, 66, 9, 1)
+            PressedFill: =RGBA(230, 230, 230, 1)
+            Size: =28
+            Text: ="Projecten"
+            Width: =600
+            X: =366
+            Y: =503
+            ZIndex: =16
+
+        btn_projectenOverzicht_2 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =94
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            RadiusBottomLeft: |
+                =10
+            RadiusBottomRight: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Over zicht"
+            Width: =78
+            X: =368
+            Y: =504
+            ZIndex: =18
+
+    btn_klantNieuw_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =94
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+        OnSelect: =Navigate('Project aanmaken/aanpassen Screen',ScreenTransition.None)
+        RadiusBottomLeft: =0
+        RadiusTopLeft: =0
+        Size: =15
+        Text: ="New +"
+        Width: =78
+        X: =890
+        Y: =504
+        ZIndex: =20
+
+    Header As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(211, 66, 9, 1)
+            Width: =1365
+            ZIndex: =2
+
+        Label1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =53
+            Size: =28
+            Text: ="Digital Rabbit"
+            Width: =400
+            X: =482
+            Y: =22
+            ZIndex: =3
+
+        icon_Home As icon.Home:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Icon: =Icon.Home
+            OnSelect: =Navigate('Home Screen (don''t use)',ScreenTransition.None)
+            X: =24
+            Y: =15
+            ZIndex: =7
+
+        lbl_user As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: =User().FullName
+            X: =1214
+            Y: =32
+            ZIndex: =19
+

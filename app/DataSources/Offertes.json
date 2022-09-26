@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "drd_offerteses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "drd_offertes",
+    "MaxGetRowsCount": 500,
+    "Name": "Offertes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "drd_beschrijving": "Beschrijving",
+      "drd_Klant": "Klant",
+      "drd_offerteid": "OfferteID",
+      "drd_offertes_AsyncOperations": "System Jobs",
+      "drd_offertes_BulkDeleteFailures": "Bulk Delete Failures",
+      "drd_offertes_DuplicateBaseRecord": "Duplicate Records (drd_offertes_DuplicateBaseRecord)",
+      "drd_offertes_DuplicateMatchingRecord": "Duplicate Records (drd_offertes_DuplicateMatchingRecord)",
+      "drd_offertes_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "drd_offertes_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "drd_offertes_ProcessSession": "Process Sessions",
+      "drd_offertes_SyncErrors": "Sync Errors",
+      "drd_offertesid": "Offertes",
+      "drd_offertestatus": "Offertestatus",
+      "drd_prijs": "Prijs",
+      "drd_prijs_base": "Prijs (Base)",
+      "drd_Project": "Project",
+      "drd_projectnaam": "Project Naam",
+      "drd_referentienummer": "Referentienummer",
+      "drd_vervaldag": "Vervaldag",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Offertes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Offertes (Views)",
+    "Name": "_drd_offertes_views",
+    "RelatedEntityName": "Offertes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "a52e2862-dd5a-4d45-a16c-ec367e838a3c": "Offertes Advanced Find View",
+      "b113c399-d2b8-4c04-9364-87f51cb074b3": "Inactive Offertes",
+      "c9f9e368-da8e-41dc-a27f-e6cd8d0757d1": "Offertes Associated View",
+      "cd931928-3be5-4902-8569-a6e0e4454d8d": "Active Offertes",
+      "ef150a44-b333-4d51-a2df-05d21f0f8bb6": "Offertes Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Offertes)",
+    "Name": "drd_offertes_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Offertes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Offertes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Offertes)",
+    "Name": "drd_offertes_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Offertes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Offertes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Offerte status",
+    "Name": "drd_offertestatus",
+    "OptionSetInfoNameMapping": {
+      "1": "aangemaakt",
+      "2": "uitgezet naar klant",
+      "3": "goedgekeurd"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "drd_offertestatus",
+        "OptionSetReferenceEntityName": "Offertes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "drd_offertestatus",
+    "RelatedEntityName": "Offertes",
+    "Type": "OptionSetInfo"
+  }
+]

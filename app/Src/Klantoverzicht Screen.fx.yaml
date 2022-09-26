@@ -1,0 +1,372 @@
+"'Klantoverzicht Screen' As screen":
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =507
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        X: =41
+        Y: =261
+        ZIndex: =1
+
+        Title3_1 As label:
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3_1 As label:
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3_1.Y + Title3_1.Height + 4
+            ZIndex: =2
+
+        NextArrow3_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3_1 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(131, 24, 75, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    rectangle_background_6 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(255, 211, 205, 1)
+        Height: =668
+        Width: =1366
+        Y: =100
+        ZIndex: =2
+
+    Rectangle1_10 As rectangle:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
+        Width: =1365
+        X: =1
+        ZIndex: =3
+
+    Label1_10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =33
+        Text: ="Klanten"
+        Width: =400
+        X: =163
+        Y: =32
+        ZIndex: =4
+
+    icon_Home_6 As icon.Home:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+        X: =41
+        Y: =17
+        ZIndex: =5
+
+    lbl_user_6 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: =User().FullName
+        X: =1214
+        Y: =32
+        ZIndex: =12
+
+    nav_projecten_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =19
+
+        Icon5_15 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.DetailList
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Width: =50
+            X: =1080
+            Y: =20
+            ZIndex: =6
+
+        Label3_20 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Projectoverzicht?? Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="projecten"
+            Width: =80
+            X: =1066
+            Y: =65
+            ZIndex: =7
+
+    Icon1_Cancel_8 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Cancel
+        Width: =50
+        X: =1288
+        Y: =700
+        ZIndex: =20
+
+    nav_offertes_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        Icon5_16 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ColorPicker
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =920
+            Y: =20
+            ZIndex: =8
+
+        Label3_21 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="offertes"
+            Width: =80
+            X: =914
+            Y: =65
+            ZIndex: =9
+
+    nav_klanten_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =22
+
+        Icon5_17 As icon.DetailList:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Person
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Width: =50
+            X: =995
+            Y: =20
+            ZIndex: =10
+
+        Label3_22 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =39
+            OnSelect: =Navigate('Klantoverzicht Screen',ScreenTransition.None)
+            Size: =11
+            Text: ="klanten"
+            Width: =80
+            X: =989
+            Y: =65
+            ZIndex: =11
+
+    Icon1_Cancel_9 As icon.Cancel:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate('Klant aanmaken/aanpassen Screen',ScreenTransition.None)
+        Width: =50
+        X: =1223
+        Y: =700
+        ZIndex: =23
+
+    lbl_pageContent_7 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(211, 66, 9, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =31
+        Size: =20
+        Text: ="Klantenoverzicht"
+        Width: =241
+        X: =63
+        Y: =200
+        ZIndex: =25
+
+    "Gallery_klanten As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =507
+        Items: =Klantens
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        X: =65
+        Y: =261
+        ZIndex: =27
+
+        Title3_3 As label:
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.KlantID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3_3 As label:
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3_3.Y + Title3_3.Height + 4
+            ZIndex: =2
+
+        NextArrow3_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(211, 66, 9, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate('Offerte details Screen',ScreenTransition.None)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3_3 As rectangle:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Fill: =RGBA(131, 24, 75, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    nav_addNewItem_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        Icon6_5 As icon.Add:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate('Offerte aanmaken/aanpassen Screen',ScreenTransition.None)
+            Width: =50
+            X: =845
+            Y: =24
+            ZIndex: =28
+
+        Label3_23 As label:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =35
+            Size: =11
+            Text: ="new off."
+            Width: =70
+            X: =840
+            Y: =67
+            ZIndex: =29
+
