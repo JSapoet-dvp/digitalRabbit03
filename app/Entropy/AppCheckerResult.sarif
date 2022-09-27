@@ -14,12 +14,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.Items"
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.Items",
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -33,7 +33,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Klant details Screen",
-                "type": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25"
+                "type": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29"
               }
             }
           ],
@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.Items"
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.Items",
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -73,7 +73,7 @@
               "properties": {
                 "member": "Items",
                 "module": "Klant details Screen",
-                "type": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25"
+                "type": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29"
               }
             }
           ],
@@ -6814,19 +6814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard1.DataCardValue22.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard3.DataCardValue30.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard1.DataCardValue22.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard3.DataCardValue30.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant details Screen",
-                "type": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard1.DataCardValue22"
+                "type": "'Klant details Screen'.Form1_3.Contactpersoon_DataCard3.DataCardValue30"
               }
             }
           ],
@@ -6904,19 +6904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant details Screen",
-                "type": "'Klant details Screen'.Form1_3.Projects_DataCard1.DataCardValue25"
+                "type": "'Klant details Screen'.Form1_3.Projects_DataCard3.DataCardValue29"
               }
             }
           ],
@@ -6977,6 +6977,36 @@
                 "member": "AccessibleLabel",
                 "module": "Klant details Screen",
                 "type": "'Klant details Screen'.Form1_3.Website_DataCard2.DataCardValue27"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Adres_DataCard2.DataCardValue31.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Adres_DataCard2.DataCardValue31.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Klant aanmaken/aanpassen Screen",
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Adres_DataCard2.DataCardValue31"
               }
             }
           ],
