@@ -263,7 +263,7 @@
 
     "Gallery_klanten As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =RGBA(230, 230, 230, 1)
+        Fill: =White
         Height: =593
         Items: =Klantens
         Layout: =Layout.Vertical
