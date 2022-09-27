@@ -7024,6 +7024,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Plaats_DataCard2.DataCardValue33.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Plaats_DataCard2.DataCardValue33.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Klant aanmaken/aanpassen Screen",
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Plaats_DataCard2.DataCardValue33"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Telefoon_DataCard2.DataCardValue34.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Telefoon_DataCard2.DataCardValue34.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Klant aanmaken/aanpassen Screen",
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Telefoon_DataCard2.DataCardValue34"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.4f28qindt7t37gtha92e074xt3n1"
                 }
               ],
