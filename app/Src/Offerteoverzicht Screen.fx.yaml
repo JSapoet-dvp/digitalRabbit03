@@ -65,7 +65,7 @@
             Text: |-
                 ="$" & Text(ThisItem.Prijs, "####.00")
             VerticalAlign: =VerticalAlign.Top
-            Width: =127
+            Width: =156
             X: =32
             Y: =63
             ZIndex: =2
@@ -91,8 +91,8 @@
             Size: =18
             Text: =ThisItem.Beschrijving
             VerticalAlign: =VerticalAlign.Top
-            Width: =375
-            X: =174
+            Width: =361
+            X: =188
             Y: =63
             ZIndex: =5
 
