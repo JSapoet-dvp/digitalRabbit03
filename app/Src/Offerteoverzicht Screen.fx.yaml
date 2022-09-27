@@ -351,3 +351,13 @@
         Y: =175
         ZIndex: =29
 
+    Icon3 As icon.Add:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Add
+        X: =1273
+        Y: =129
+        ZIndex: =30
+
