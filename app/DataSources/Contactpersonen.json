@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "drd_contactpersonens",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "drd_contactpersonen",
+    "Name": "Contactpersonen",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "drd_achternaam": "Achternaam",
+      "drd_contactpersonen_AsyncOperations": "System Jobs",
+      "drd_contactpersonen_BulkDeleteFailures": "Bulk Delete Failures",
+      "drd_contactpersonen_DuplicateBaseRecord": "Duplicate Records (drd_contactpersonen_DuplicateBaseRecord)",
+      "drd_contactpersonen_DuplicateMatchingRecord": "Duplicate Records (drd_contactpersonen_DuplicateMatchingRecord)",
+      "drd_contactpersonen_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "drd_contactpersonen_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "drd_contactpersonen_ProcessSession": "Process Sessions",
+      "drd_contactpersonen_SyncErrors": "Sync Errors",
+      "drd_contactpersonenid": "Contactpersonen",
+      "drd_contactpersoonid": "contactpersoon ID",
+      "drd_drd_klanten_Contactpersoon_drd_contactper": "Klanten",
+      "drd_email": "Email",
+      "drd_telefoon": "Telefoon",
+      "drd_voornaam": "Voornaam",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Contactpersonen",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Contactpersonen (Views)",
+    "Name": "_drd_contactpersonen_views",
+    "RelatedEntityName": "Contactpersonen",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0e04ec2d-8d2e-4465-b7fa-e8b03fd3da88": "Contactpersonen Lookup View",
+      "41d0e5e5-8dea-4b42-8457-46a8437af5b7": "Contactpersonen Advanced Find View",
+      "79843725-825f-4b4e-a839-6ac7cd7e8229": "Contactpersonen Associated View",
+      "b1093e27-8511-45f1-ae77-9c099aea7c97": "Active Contactpersonens",
+      "c85371d4-2dd3-48b2-bcaf-9e944a6106db": "Inactive Contactpersonens"
+    }
+  },
+  {
+    "DisplayName": "Status (Contactpersonen)",
+    "Name": "drd_contactpersonen_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Contactpersonen"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Contactpersonen",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Contactpersonen)",
+    "Name": "drd_contactpersonen_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Contactpersonen"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Contactpersonen",
+    "Type": "OptionSetInfo"
+  }
+]
