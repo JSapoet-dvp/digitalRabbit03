@@ -64,7 +64,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Body Background",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -210,7 +210,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Digital Rabbit Logo",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -436,7 +436,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_offertes",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -647,7 +647,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Header Background",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -748,7 +748,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Header Group",
-      "ParentIndex": 20,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -832,7 +832,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Home Button",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -996,7 +996,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1184,7 +1184,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_Cancel_5",
-      "ParentIndex": 19,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1384,7 +1384,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_Cancel_6",
-      "ParentIndex": 18,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1915,7 +1915,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Klanten Icon",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2124,7 +2124,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Klanten Label",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2398,7 +2398,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Name User",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2680,7 +2680,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Nieuw Offerte Icon",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2888,7 +2888,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Nieuw Offerte Label",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3231,7 +3231,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Offertes Icon",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3440,7 +3440,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Offertes Label",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3713,7 +3713,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Projecten Icon",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3922,7 +3922,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Projecten Label",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4217,7 +4217,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Screen Description",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4493,7 +4493,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Searchbar",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
