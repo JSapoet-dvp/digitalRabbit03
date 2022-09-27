@@ -4844,19 +4844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Bedrijfsnaam_DataCard2.DataCardValue17.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Bedrijfsnaam_DataCard2.DataCardValue17.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Bedrijfsnaam_DataCard2.DataCardValue17.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Bedrijfsnaam_DataCard2.DataCardValue17.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant aanmaken/aanpassen Screen",
-                "type": "'Klant aanmaken/aanpassen Screen'.Form1_2.Bedrijfsnaam_DataCard2.DataCardValue17"
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Bedrijfsnaam_DataCard2.DataCardValue17"
               }
             }
           ],
@@ -4874,19 +4874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Contactpersoon_DataCard2.DataCardValue18.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Contactpersoon_DataCard2.DataCardValue18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Contactpersoon_DataCard2.DataCardValue18.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Contactpersoon_DataCard2.DataCardValue18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant aanmaken/aanpassen Screen",
-                "type": "'Klant aanmaken/aanpassen Screen'.Form1_2.Contactpersoon_DataCard2.DataCardValue18"
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Contactpersoon_DataCard2.DataCardValue18"
               }
             }
           ],
@@ -4904,19 +4904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Email_DataCard2.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Email_DataCard2.DataCardValue19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Email_DataCard2.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Email_DataCard2.DataCardValue19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant aanmaken/aanpassen Screen",
-                "type": "'Klant aanmaken/aanpassen Screen'.Form1_2.Email_DataCard2.DataCardValue19"
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Email_DataCard2.DataCardValue19"
               }
             }
           ],
@@ -4934,19 +4934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Postcode_DataCard1.DataCardValue20.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Postcode_DataCard1.DataCardValue20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Postcode_DataCard1.DataCardValue20.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Postcode_DataCard1.DataCardValue20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant aanmaken/aanpassen Screen",
-                "type": "'Klant aanmaken/aanpassen Screen'.Form1_2.Postcode_DataCard1.DataCardValue20"
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Postcode_DataCard1.DataCardValue20"
               }
             }
           ],
@@ -4964,19 +4964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Website_DataCard1.DataCardValue21.AccessibleLabel"
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Website_DataCard1.DataCardValue21.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.Form1_2.Website_DataCard1.DataCardValue21.AccessibleLabel",
+                  "fullyQualifiedName": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Website_DataCard1.DataCardValue21.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klant aanmaken/aanpassen Screen",
-                "type": "'Klant aanmaken/aanpassen Screen'.Form1_2.Website_DataCard1.DataCardValue21"
+                "type": "'Klant aanmaken/aanpassen Screen'.klantaanmaken_aanpassen_form.Website_DataCard1.DataCardValue21"
               }
             }
           ],

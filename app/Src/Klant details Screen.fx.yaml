@@ -181,7 +181,7 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =50
         Icon: =Icon.Add
-        OnSelect: =Navigate('Klant aanmaken/aanpassen Screen',ScreenTransition.None)
+        OnSelect: =ResetForm(klantaanmaken_aanpassen_form);NewForm(klantaanmaken_aanpassen_form);Navigate('Klant aanmaken/aanpassen Screen')
         Width: =50
         X: =1151
         Y: =700
