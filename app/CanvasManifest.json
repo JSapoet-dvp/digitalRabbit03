@@ -92,11 +92,11 @@
     "FileID": "9662d026-584b-4e79-9f46-27ac188055c5",
     "Id": "b394c221-9ee8-45bb-8293-536e27ac29c6",
     "InstrumentationKey": "",
-    "Name": "navigatieTemplate_OfferteProcessor",
+    "Name": "DigitalRabbit_OfferteProcessor",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "navigatieTemplate_OfferteProcessor",
+    "AppName": "DigitalRabbit_OfferteProcessor",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
