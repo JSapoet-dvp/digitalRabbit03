@@ -328,12 +328,13 @@
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 211, 205, 1)
+                IsSearchable: =false
                 Items: =Choices([@Klantens].drd_Contactpersoon)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(131, 24, 75, 1)
                 SearchFields: =["drd_contactpersoonid"]
-                SearchItems: =Search(Choices([@Klantens].drd_Contactpersoon),DataCardValue15.SearchText,"drd_contactpersoonid")
+                SearchItems: =[]
                 SelectionFill: =RGBA(211, 66, 9, 1)
                 SelectMultiple: =false
                 Size: =13

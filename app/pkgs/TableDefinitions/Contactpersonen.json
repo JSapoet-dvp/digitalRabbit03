@@ -2,10 +2,6 @@
   "DatasetName": "default.cds",
   "EntityName": "Contactpersonen",
   "InstanceUrl": "https://org624cb5d5.crm4.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "drd_contactpersonens",
-    "logicalName": "drd_contactpersonen"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org624cb5d5.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('drd_contactpersonen')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
