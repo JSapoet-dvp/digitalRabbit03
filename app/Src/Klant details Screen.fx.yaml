@@ -3,9 +3,10 @@
 
     rectangle_background_4 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
+        DisplayMode: =DisplayMode.View
         Fill: =RGBA(255, 211, 205, 1)
         Height: =668
-        Width: =1116
+        Width: =1366
         Y: =100
         ZIndex: =1
 
@@ -190,9 +191,10 @@
     Form1_3 As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =Klantens
+        DefaultMode: =FormMode.View
         Height: =604
         NumberOfColumns: =2
-        Width: =805
+        Width: =1051
         X: =40
         Y: =152
         ZIndex: =25
@@ -209,7 +211,7 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_bedrijfsnaam")
             Required: =false
             Update: =DataCardValue14.Text
-            Width: =402
+            Width: =525
             X: =0
             Y: =0
             ZIndex: =1
@@ -297,7 +299,7 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_email")
             Required: =false
             Update: =DataCardValue16.Text
-            Width: =402
+            Width: =525
             X: =1
             Y: =0
             ZIndex: =1
@@ -385,7 +387,7 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_adres")
             Required: =false
             Update: =DataCardValue15.Text
-            Width: =402
+            Width: =525
             X: =0
             Y: =1
             ZIndex: =1
@@ -473,7 +475,7 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_plaats")
             Required: =false
             Update: =DataCardValue23.Text
-            Width: =402
+            Width: =525
             X: =1
             Y: =1
             ZIndex: =1
@@ -561,7 +563,7 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_postcode")
             Required: =false
             Update: =DataCardValue24.Text
-            Width: =402
+            Width: =525
             X: =0
             Y: =2
             ZIndex: =1
@@ -637,93 +639,6 @@
                 Y: =DataCardKey26.Y
                 ZIndex: =4
 
-        Projects_DataCard3 As typedDataCard.comboBoxOptionSetMultiViewCard:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cre84_drd_project_Klant_drd_klanten"
-            Default: =ThisItem.Projects
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Klantens],DataSourceInfo.DisplayName,"cre84_drd_project_Klant_drd_klanten")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue29.SelectedItems
-            Width: =402
-            X: =1
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey31 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 89, 178, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =34
-                Size: =13
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue29 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(0, 51, 102, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =Parent.DisplayMode
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(153, 205, 255, 1)
-                IsSearchable: =false
-                Items: =Choices(_)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(0, 89, 178, 1)
-                SearchItems: =[]
-                SelectionFill: =RGBA(0, 51, 102, 1)
-                Size: =13
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey31.Y + DataCardKey31.Height + 5
-                ZIndex: =2
-
-            ErrorMessage27 As label:
-                AutoHeight: =true
-                Color: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue29.Y + DataCardValue29.Height
-                ZIndex: =3
-
-            StarVisible27 As label:
-                Align: =Align.Center
-                Color: =RGBA(0, 89, 178, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey31.Height
-                Size: =13
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey31.Y
-                ZIndex: =4
-
         Telefoon_DataCard1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
@@ -736,9 +651,9 @@
             MaxLength: =DataSourceInfo([@Klantens], DataSourceInfo.MaxLength, "drd_telefoon")
             Required: =false
             Update: =DataCardValue26.Text
-            Width: =402
-            X: =0
-            Y: =3
+            Width: =525
+            X: =1
+            Y: =2
             ZIndex: =1
 
             DataCardKey28 As label:
@@ -823,8 +738,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue27.Text
-            Width: =402
-            X: =1
+            Width: =525
+            X: =0
             Y: =3
             ZIndex: =1
 
@@ -909,9 +824,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue30.Selected
-            Width: =402
-            X: =0
-            Y: =4
+            Width: =525
+            X: =1
+            Y: =3
             ZIndex: =1
 
             DataCardKey32 As label:
