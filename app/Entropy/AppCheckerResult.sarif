@@ -6764,19 +6764,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Klantoverzicht Screen'.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Klantoverzicht Screen'.SearchInput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Klantoverzicht Screen'.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Klantoverzicht Screen'.SearchInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Klantoverzicht Screen",
-                "type": "'Klantoverzicht Screen'.TextInput1"
+                "type": "'Klantoverzicht Screen'.SearchInput"
               }
             }
           ],
