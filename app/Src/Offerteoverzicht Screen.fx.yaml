@@ -1,27 +1,30 @@
 "'Offerteoverzicht Screen' As screen":
-    Fill: =RGBA(255,255,255,1)
-    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
-
-    "'Body Background' As rectangle":
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Fill: =RGBA(255, 211, 205, 1)
-        Height: =668
-        Width: =1366
-        Y: =100
-        ZIndex: =1
+    Fill: =RGBA(232, 232, 232, 1)
 
     "Gallery_offertes As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(211, 66, 9, 1)
         Fill: =RGBA(255, 211, 205, 1)
         Height: =507
-        Items: =Search(Offertes, Searchbar.Text, "drd_beschrijving")
+        Items: |-
+            =Search(
+            
+                Filter(
+            
+                    Offertes,
+            
+                        IsBlank(OffertesCombo.Selected) || ThisRecord.Klant.Bedrijfsnaam = OffertesCombo.Selected.Result
+            ),
+            
+            Searchbar.Text,
+            "drd_beschrijving"
+            )
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
         Width: =1152
         X: =50
         Y: =215
-        ZIndex: =1
+        ZIndex: =2
 
         Title3 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -60,7 +63,7 @@
             ZIndex: =2
 
         Separator3 As rectangle:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =1
             OnSelect: =Select(Parent)
@@ -121,7 +124,7 @@
             ZIndex: =7
 
         Icon2 As icon.Edit:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =52
@@ -132,8 +135,16 @@
             Y: =30
             ZIndex: =8
 
+    "'Body Background' As rectangle":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(235, 245, 255, 1)
+        Height: =668
+        Width: =1366
+        Y: =100
+        ZIndex: =4
+
     Icon1_Cancel_5 As icon.Cancel:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -143,10 +154,10 @@
         Width: =50
         X: =1288
         Y: =700
-        ZIndex: =19
+        ZIndex: =16
 
     Icon1_Cancel_6 As icon.Cancel:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -156,10 +167,10 @@
         Width: =50
         X: =1223
         Y: =700
-        ZIndex: =23
+        ZIndex: =17
 
     Searchbar As text:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
         Default: =""
@@ -170,55 +181,98 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         HintText: ="Zoek Klanten"
-        HoverBorderColor: =RGBA(131, 24, 75, 1)
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
         HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(255, 211, 205, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
         Size: =13
         Width: =595
         X: =95
         Y: =175
-        ZIndex: =28
+        ZIndex: =19
 
-    "'Header Group' As group":
+    SearchIcon As icon.Search:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =40
+        Icon: =Icon.Search
+        Width: =33
+        X: =50
+        Y: =175
+        ZIndex: =20
+
+    OffertesCombo As combobox:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Result"]
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(Offertes, ThisRecord.Klant.Bedrijfsnaam).Result
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SearchFields: =["Result"]
+        SearchItems: =Search(Distinct(Offertes, ThisRecord.Klant.Bedrijfsnaam).Result,OffertesCombo.SearchText,"Result")
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =13
+        X: =721
+        Y: =175
+        ZIndex: =21
+
+    HeaderTop As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =28
+        ZIndex: =31
 
         "'Header Background' As rectangle":
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Fill: =RGBA(211, 66, 9, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 51, 102, 1)
             Height: =107
             Width: =1366
             X: =1
-            ZIndex: =2
+            ZIndex: =1
+
+        "'Header Background_1' As rectangle":
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =107
+            Width: =347
+            ZIndex: =3
 
         "'Screen Description' As label":
             Align: =Align.Center
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Size: =33
             Text: ="Offertes"
             Width: =400
-            X: =330
-            Y: =33
-            ZIndex: =3
+            X: =434
+            Y: =29
+            ZIndex: =5
 
         "'Home Button' As icon.Home":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Icon: =Icon.Home
             OnSelect: =Navigate('Offerteoverzicht Screen',ScreenTransition.None)
-            X: =151
-            Y: =17
-            ZIndex: =4
+            X: =405
+            Y: =8
+            ZIndex: =6
 
         "'Projecten Icon' As icon.DetailList":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -228,10 +282,10 @@
             Width: =50
             X: =1080
             Y: =20
-            ZIndex: =5
+            ZIndex: =7
 
         "'Projecten Label' As label":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -241,10 +295,10 @@
             Width: =80
             X: =1066
             Y: =65
-            ZIndex: =6
+            ZIndex: =8
 
         "'Offertes Icon' As icon.DetailList":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -254,10 +308,10 @@
             Width: =50
             X: =920
             Y: =20
-            ZIndex: =7
+            ZIndex: =9
 
         "'Offertes Label' As label":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -267,10 +321,10 @@
             Width: =80
             X: =914
             Y: =65
-            ZIndex: =8
+            ZIndex: =10
 
         "'Klanten Icon' As icon.DetailList":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -280,10 +334,10 @@
             Width: =50
             X: =995
             Y: =20
-            ZIndex: =9
+            ZIndex: =11
 
         "'Klanten Label' As label":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -293,17 +347,17 @@
             Width: =80
             X: =989
             Y: =65
-            ZIndex: =10
+            ZIndex: =12
 
         "'Name User' As label":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Size: =13
             Text: =User().FullName
             X: =1202
             Y: =20
-            ZIndex: =11
+            ZIndex: =13
 
         "'Nieuw Offerte Icon' As icon.Add":
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -316,10 +370,10 @@
             Width: =50
             X: =845
             Y: =24
-            ZIndex: =12
+            ZIndex: =14
 
         "'Nieuw Offerte Label' As label":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =32
@@ -328,26 +382,16 @@
             Width: =80
             X: =834
             Y: =70
-            ZIndex: =17
+            ZIndex: =15
 
         "'Digital Rabbit Logo' As image":
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =108
-            Image: ='4f28qindt7t37gtha92e074xt3n1'
-            Width: =108
-            ZIndex: =27
-
-    Icon1 As icon.Search:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(131, 24, 75, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =40
-        Icon: =Icon.Search
-        Width: =33
-        X: =50
-        Y: =175
-        ZIndex: =29
+            Image: |-
+                ="https://qien.sharepoint.com/sites/powerplatformteamqienroborana/gedeelde%20documenten/digital%20rabbit%20og/digital%20rabbit.png?web=1"
+            Width: =313
+            X: =17
+            ZIndex: =18
 

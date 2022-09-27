@@ -1,9 +1,8 @@
 "'Projectoverzicht?? Screen' As screen":
-    Fill: =RGBA(255,255,255,1)
-    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    Fill: =RGBA(232, 232, 232, 1)
 
     "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(230, 230, 230, 1)
         Height: =507
         Items: =CustomGallerySample
@@ -51,7 +50,7 @@
 
         NextArrow3_2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(211, 66, 9, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -70,8 +69,8 @@
             ZIndex: =3
 
         Separator3_2 As rectangle:
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Fill: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -79,7 +78,7 @@
             ZIndex: =4
 
     rectangle_background_7 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(255, 211, 205, 1)
         Height: =668
         Width: =1366
@@ -87,15 +86,15 @@
         ZIndex: =2
 
     Rectangle1_11 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Fill: =RGBA(211, 66, 9, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(0, 51, 102, 1)
         Width: =1365
         X: =1
         ZIndex: =3
 
     Label1_11 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =33
@@ -106,7 +105,7 @@
         ZIndex: =4
 
     icon_Home_7 As icon.Home:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -117,7 +116,7 @@
         ZIndex: =5
 
     lbl_user_7 As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
@@ -134,7 +133,7 @@
         ZIndex: =15
 
         Icon5_18 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -147,7 +146,7 @@
             ZIndex: =6
 
         Label3_26 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -160,7 +159,7 @@
             ZIndex: =7
 
     Icon1_Cancel_10 As icon.Cancel:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -179,7 +178,7 @@
         ZIndex: =17
 
         Icon5_19 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -192,7 +191,7 @@
             ZIndex: =8
 
         Label3_27 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -212,7 +211,7 @@
         ZIndex: =18
 
         Icon5_20 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -225,7 +224,7 @@
             ZIndex: =10
 
         Label3_28 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -238,7 +237,7 @@
             ZIndex: =11
 
     Icon1_Cancel_11 As icon.Cancel:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -251,7 +250,7 @@
         ZIndex: =19
 
     lbl_pageContent_8 As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =29
@@ -263,7 +262,7 @@
         ZIndex: =21
 
     "Gallery_projecten As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Height: =507
         Items: =Projects
         Layout: =Layout.Vertical
@@ -311,7 +310,7 @@
 
         NextArrow3_4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(211, 66, 9, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -330,8 +329,8 @@
             ZIndex: =3
 
         Separator3_4 As rectangle:
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Fill: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(0, 89, 178, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -339,7 +338,7 @@
             ZIndex: =4
 
         Label2 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             OnSelect: =Select(Parent)
@@ -351,7 +350,7 @@
             ZIndex: =5
 
         Label2_1 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             OnSelect: =Select(Parent)
@@ -362,7 +361,7 @@
             ZIndex: =6
 
         Label2_2 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             OnSelect: =Select(Parent)
@@ -393,7 +392,7 @@
             ZIndex: =23
 
         Label3_29 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =35

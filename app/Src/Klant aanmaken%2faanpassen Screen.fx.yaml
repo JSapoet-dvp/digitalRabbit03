@@ -1,9 +1,8 @@
 "'Klant aanmaken/aanpassen Screen' As screen":
-    Fill: =RGBA(255,255,255,1)
-    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    Fill: =RGBA(232, 232, 232, 1)
 
     rectangle_background_3 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Fill: =RGBA(255, 211, 205, 1)
         Height: =668
         OnSelect: =Form1_2
@@ -12,15 +11,15 @@
         ZIndex: =1
 
     Rectangle1_5 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Fill: =RGBA(211, 66, 9, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Fill: =RGBA(0, 51, 102, 1)
         Width: =1365
         X: =1
         ZIndex: =2
 
     Label1_5 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =33
@@ -31,7 +30,7 @@
         ZIndex: =3
 
     icon_Home_3 As icon.Home:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -42,7 +41,7 @@
         ZIndex: =4
 
     Icon1_Cancel_2 As icon.Cancel:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -55,7 +54,7 @@
         ZIndex: =5
 
     Icon_Save_2 As icon.Save:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
@@ -68,7 +67,7 @@
         ZIndex: =6
 
     lbl_user_3 As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
@@ -78,7 +77,7 @@
         ZIndex: =13
 
     lbl_pageContent_1 As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(211, 66, 9, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =31
@@ -97,7 +96,7 @@
         ZIndex: =21
 
         Icon5_6 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -110,7 +109,7 @@
             ZIndex: =7
 
         Label3_8 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -130,7 +129,7 @@
         ZIndex: =22
 
         Icon5_7 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -143,7 +142,7 @@
             ZIndex: =9
 
         Label3_9 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -163,7 +162,7 @@
         ZIndex: =23
 
         Icon5_8 As icon.DetailList:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -176,7 +175,7 @@
             ZIndex: =11
 
         Label3_10 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =39
@@ -189,7 +188,7 @@
             ZIndex: =12
 
     Form1_2 As form:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =Klantens
         NumberOfColumns: =1
         X: =40
@@ -197,7 +196,7 @@
         ZIndex: =25
 
         Bedrijfsnaam_DataCard2 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="drd_bedrijfsnaam"
             Default: =ThisItem.Bedrijfsnaam
@@ -215,7 +214,7 @@
 
             DataCardKey19 As label:
                 AutoHeight: =true
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
@@ -237,9 +236,9 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -273,7 +272,7 @@
 
             StarVisible15 As label:
                 Align: =Align.Center
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey19.Height
                 Size: =13
@@ -285,7 +284,7 @@
                 ZIndex: =4
 
         Contactpersoon_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="drd_Contactpersoon"
             Default: =ThisItem.Contactpersoon
@@ -302,7 +301,7 @@
 
             DataCardKey20 As label:
                 AutoHeight: =true
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
@@ -315,10 +314,10 @@
 
             DataCardValue18 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(211, 66, 9, 1)
+                ChevronBackground: =RGBA(0, 51, 102, 1)
                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -326,14 +325,14 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
                 IsSearchable: =false
                 Items: =Choices([@Klantens].drd_Contactpersoon)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(131, 24, 75, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
                 SearchItems: =[]
-                SelectionFill: =RGBA(211, 66, 9, 1)
+                SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
                 Tooltip: =Parent.DisplayName
@@ -362,7 +361,7 @@
 
             StarVisible16 As label:
                 Align: =Align.Center
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey20.Height
                 Size: =13
@@ -374,7 +373,7 @@
                 ZIndex: =4
 
         Email_DataCard2 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="drd_email"
             Default: =ThisItem.Email
@@ -392,7 +391,7 @@
 
             DataCardKey21 As label:
                 AutoHeight: =true
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
@@ -414,9 +413,9 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -450,7 +449,7 @@
 
             StarVisible17 As label:
                 Align: =Align.Center
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey21.Height
                 Size: =13
@@ -462,7 +461,7 @@
                 ZIndex: =4
 
         Postcode_DataCard1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="drd_postcode"
             Default: =ThisItem.Postcode
@@ -480,7 +479,7 @@
 
             DataCardKey22 As label:
                 AutoHeight: =true
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
@@ -502,9 +501,9 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -538,7 +537,7 @@
 
             StarVisible18 As label:
                 Align: =Align.Center
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey22.Height
                 Size: =13
@@ -550,7 +549,7 @@
                 ZIndex: =4
 
         Website_DataCard1 As typedDataCard.urlEditCard:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="drd_website"
             Default: =ThisItem.Website
@@ -567,7 +566,7 @@
 
             DataCardKey23 As label:
                 AutoHeight: =true
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
@@ -589,9 +588,9 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(131, 24, 75, 1)
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 211, 205, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -624,7 +623,7 @@
 
             StarVisible19 As label:
                 Align: =Align.Center
-                Color: =RGBA(131, 24, 75, 1)
+                Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey23.Height
                 Size: =13
@@ -656,7 +655,7 @@
             ZIndex: =26
 
         Label3_25 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =35
